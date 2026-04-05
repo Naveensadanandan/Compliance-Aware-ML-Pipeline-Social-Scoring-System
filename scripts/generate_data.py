@@ -97,7 +97,7 @@ def generate_social_scoring_data(n_samples: int = 10000) -> pd.DataFrame:
         
         # Additional risk factors
         debt_to_income_ratio = existing_debt / annual_income if annual_income > 0 else 999
-        employment_length_years = np.random.randint(0, min(age - 18, 30))
+        employment_length_years = np.random.randint(0, max(1, min(age - 18, 30)))
         has_savings = np.random.choice([True, False], p=[0.6, 0.4])
         savings_amount = int(annual_income * np.random.uniform(0, 1.5)) if has_savings else 0
         
