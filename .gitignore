@@ -44,6 +44,8 @@ logs/
 *.sqlite
 *.sqlite3
 
+config.py
+
 # MLflow
 mlruns/
 mlartifacts/
