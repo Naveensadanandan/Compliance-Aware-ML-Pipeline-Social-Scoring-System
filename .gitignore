@@ -44,6 +44,8 @@ logs/
 *.sqlite
 *.sqlite3
 
+config.py
+
 # MLflow
 mlruns/
 mlartifacts/
@@ -53,6 +55,7 @@ mlartifacts/
 .env.local
 
 # Data
+data
 data/raw/*
 data/processed/*
 data/synthetic/*
