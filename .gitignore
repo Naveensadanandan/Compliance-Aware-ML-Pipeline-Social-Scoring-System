@@ -53,6 +53,7 @@ mlartifacts/
 .env.local
 
 # Data
+data
 data/raw/*
 data/processed/*
 data/synthetic/*
